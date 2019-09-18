@@ -185,7 +185,9 @@ fi
 #### Écrivez un programme qui calcule la factorielle d’un entier naturel passé en paramètre (on supposera que l’utilisateur saisit toujours un entier naturel).
 
   #!/bin/bash
+  
     val=1
+    
     result=1
 
     while [ $val -lt $1 ]
@@ -231,11 +233,17 @@ fi
   function is_number()
     {
     re='^[+-]?[0-9]+([.][0-9]+)?$'
+    
             if ! [[ $1 =~ $re ]] ; then
+            
                     return 1
+                    
             else
+            
                     return 0
+                    
             fi
+            
     }
 
     max=-100
